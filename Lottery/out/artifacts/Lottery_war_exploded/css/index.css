@@ -1,0 +1,191 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    width: auto;
+    height: 50px;
+    background-color:#F33636;
+    position: relative;
+}
+.header .inner{
+    width: 1263px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.header .inner .log{
+    margin-left: 150px;
+    margin-right: 10px;
+    margin-top:5px;
+    width: 170px;
+    height: 45px;
+    float: left;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+.header .inner ul li{
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-right: 5px;
+    margin-right: 1px;
+    list-style: none;
+    height: 35px;
+    color: white;
+    position: relative;
+    float: left;
+}
+.header ul li:hover{
+    background-color: #DA0F0F;
+}
+.header a{
+    color: whitesmoke;
+    font-size: 15px;
+    color: black;
+}
+
+.main{
+    width: 1000px;
+    height: 800px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+}
+.main .left{
+    width: 160px;
+    height: 530px;
+    float: left;
+    position: relative;
+    /*-webkit-box-shadow: #666 0 0 0.1rem;*/
+    -moz-box-shadow: #666 0 0 0.1rem;
+    box-shadow: #666 0 0 0.1rem;
+}
+.main .left .title{
+    margin-top: 10px;
+    margin-left: 5px;
+    font-size: 17px ;
+    font-weight: bold;
+}
+.left li{
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+    list-style: none;
+    width: 160px;
+    height: 30px;
+}
+.left li:hover{
+    background-color: #eeeeee;
+    color: red;
+}
+.left li:hover a{
+    color: red;
+}
+.left li img{
+    width: 30px;
+    height: 30px;
+    float: left;
+}
+.left li a{
+    color: black;
+}
+.main .center{
+    width: 510px;
+    height: 300px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+}
+.main .right{
+    width: 300px;
+    height: 500px;
+    margin-left: 10px;
+    float: left;
+    position: relative;
+}
+.container {
+    /* 轮播图显示区域 */
+    position: relative;
+    width: 510px;
+    height: 206px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    /* 隐藏轮播范围外的图片 */
+    z-index: 100;
+}
+
+.wrap {
+    position: absolute;
+    /* 绝对定位,通过left控制图片的显示 */
+    width: 3570px;
+    /* 7张图片连起来的宽度 */
+    height: 206px;
+    z-index: 1;
+    /* buttons用到 */
+}
+
+.container .wrap img {
+    float: left;
+    width: 510px;
+    height: 206px;
+}
+
+.container .buttons {
+    position: absolute;
+    left: 210px;
+    bottom: 5px;
+    width: 100px;
+    height: 20px;
+    z-index: 2;
+}
+
+.container .buttons span {
+    margin-left: 5px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba(2, 2, 2, 0.3);
+    text-align: center;
+    color: white;
+    cursor: pointer;
+}
+
+.container .buttons span.on {
+    background-color: #ff0004;
+}
+
+.container .arrow {
+    position: absolute;
+    height: 30px;
+    top: 40%;
+    color: white;
+    padding: 0px 3px;
+    /*border-radius: 50%;*/
+    font-size: 17px;
+    z-index: 2;
+    display: none;
+}
+
+.container .arrow_left {
+    left: 0px;
+}
+
+.container .arrow_right {
+    right: 0px;
+}
+
+.container:hover .arrow {
+    display: block;
+    opacity: 0.5;
+    background-color: #0e1419;
+}

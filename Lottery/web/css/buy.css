@@ -1,0 +1,314 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.box{
+    height: 1200px;
+    background-color: #b6bef7;
+}
+.header{
+    width: auto;
+    height: 50px;
+    background-color: #f37381;
+    position: relative;
+}
+.header .inner{
+    width: 1263px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.header .inner .log{
+    margin-left: 150px;
+    margin-right: 10px;
+    margin-top:5px;
+    width: 170px;
+    height: 45px;
+    float: left;
+    text-align: center;
+    position: relative;
+    background-color: white;
+}
+
+.header .inner ul li{
+    padding-left: 5px;
+    padding-top: 15px;
+    padding-right: 5px;
+    margin-right: 1px;
+    list-style: none;
+    height: 35px;
+    color: white;
+    position: relative;
+    float: left;
+}
+.header ul li:hover{
+    background-color: #DA0F0F;
+}
+.header a{
+    color: whitesmoke;
+    font-size: 15px;
+    color: black;
+}
+
+.img{
+    width: 1000px;
+    height: 75px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main{
+    width: 1000px;
+    height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.message{
+    width: 1000px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom:1px dashed #c9c9c9;
+    position: relative;
+}
+.message .name{
+    width: 150px;
+    height: 70px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-right: 120px;
+    font-size: 27px;
+    color: red;
+    font-weight: bold;
+    position: relative;
+    float: left;
+}
+.title_top{
+    width: 560px;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 20px;
+    float: left;
+    position: relative;
+}
+.title_bottom{
+    width: 480px;
+    height: 45px;
+    padding-top: 10px;
+    padding-left: 100px;
+    float: left;
+    position: relative;
+}
+.title_bottom span{
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+    position: relative;
+}
+.prize{
+    float:left;
+    width: auto;
+    height: auto;
+    color: red;
+    font-size: 40px;
+    border:1px dashed #e6e6e6;
+    position: relative;
+}
+.search{
+    width: 300px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: #666 0 0 0.1rem;
+    box-shadow: #666 0 0 0.1rem;
+}
+.search .top{
+    width: 300px;
+    height: 45px;
+    margin-left: 20px;
+    margin-top: 10px;
+    position: relative;
+    float: left;
+    /*background-color: #F66F6A;*/
+}
+.search .center {
+    width: 300px;
+    height: auto;
+    margin-left: 20px;
+    position: relative;
+    float: left;
+    /*background-color: #d9d9d9;*/
+}
+.search .center .red{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 23px;
+    color: white;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.search .center .blue{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 7px;
+    border-radius: 50%;
+    background-color: blue;
+    font-size: 23px;
+    color: white;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+.search .bottom{
+    width: 280px;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    /*background-color: #daceff;*/
+    position: relative;
+    float: left;
+}
+.buy{
+    width: 520px;
+    height: 400px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: #666 0 0 0.1rem;
+    box-shadow: #666 0 0 0.1rem;
+}
+.buy .title{
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 450px;
+    height: 40px;
+}
+.buy .red_box{
+    width: 490px;
+    height: 200px;
+    padding-left: 20px;
+}
+.buy .blue_box{
+    width: 490px;
+    height: 200px;
+    padding-left: 20px;
+}
+.buy .red_box .re{
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    border-radius: 50%;
+    font-size: 23px;
+    border: 1px solid #ececec;
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.buy .blue_box .bl{
+    width: 28px;
+    height: 28px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    border-radius: 50%;
+    font-size: 23px;
+    border: 1px solid #ececec;
+    color: black;
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.buy .red_box .red_onclick{
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 23px;
+    color: white;
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.buy .blue_box .blue_onclick{
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    border-radius: 50%;
+    background-color: blue;
+    font-size: 23px;
+    color: white;
+    float: left;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+}
+.order{
+    width:490px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    -moz-box-shadow: #ffdf00 0 0 0.1rem;
+    box-shadow: #ffe400 0 0 0.1rem;
+}
+.order .info{
+    width: 480px;
+    height: 50px;
+    padding-top: 30px;
+    padding-left: 10px;
+    font-size: 20px;
+    float: left;
+    position: relative;
+}
+.order .info div{
+    position: relative;
+    float: left;
+}
+.order .pay{
+    width: 70px;
+    height: 45px;
+    margin-left: 200px;
+    margin-right: auto;
+    background-color: #53d5ff;
+    border-radius: 7%;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+}
+.order .pay:hover{
+    width: 70px;
+    height: 45px;
+    margin-left: 200px;
+    margin-right: auto;
+    background-color: #ffa5db;
+    font-size: 30px;
+    text-align: center;
+    float: left;
+    cursor: pointer;
+}

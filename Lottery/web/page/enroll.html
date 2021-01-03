@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+
+    <script type="text/javascript">
+        function validate() {
+            var email = document.getElementById("email");
+            var password = document.getElementById("password");
+            var pattern = /^([a-zA-Z]|[0-9])(\w|\-)+@[a-zA-Z0-9]+\.([a-zA-Z]{2,4})$/;
+
+            //验证邮箱合法性
+            if (email.value == '') {
+                alert("邮箱不能为空！");
+                email.focus();
+                return false;
+            } else if (!pattern.test(email.value)) {
+                alert("请输入正确的邮箱格式！");
+                email.focus();
+                return false;
+            }
+            if (password.value == '') {
+                alert("密码不能为空！");
+                password.focus();
+                return false;
+            } else if (password.value.length < 6 || password.value.length > 12) {
+                alert("密码长度不符合要求，请输入6~12位密码！");
+                password.focus();
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+<!-- 顶部区域 -->
+<div class="header">
+    <div class="img">
+        <img src="http://uc.zhcw.com/statics/images/u-t-logo.jpg" alt="">
+    </div>
+    <a href="login.html">登录</a>
+</div>
+<div class="container">
+    <img src="https://trademark-pics-search.oss-cn-shanghai.aliyuncs.com/big/t4517859036087296.jpg" alt="">
+    <div class="login">
+        <div class="form_title">
+            注册
+        </div>
+        <form action="../EnrollServlet" method="post" onsubmit="return validate();">
+            <input type="text" name="email" id="email" maxlength="20" placeholder="邮箱地址"/>
+            <br>
+            <input type="password" name="password" id="password" placeholder="密码"/>
+            <br>
+            <input style="background-color: #F66F6A;font-family: 华文正楷;" type="reset" name="resetButton" id="reset" value="重置"/>
+            <br>
+            <input style="background-color: #F66F6A;font-family: 华文正楷;" type="submit" name="enrollButton" id="enroll" value="注册" />
+            <a style="float:left;color: red;margin: 10px;" href="login.html">现有账号？</a>
+        </form>
+    </div>
+</div>
+</body>
+</html>
